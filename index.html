@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Compra de Materias</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+    <h1>Sistema de Compra de Materias</h1>
+    <div class="kpis">
+        <span>Total materias: <strong id="total"></strong></span>
+        <span>Materias visibles: <strong id="filtradas"></strong></span>
+    </div>
+</header>
+
+<main class="container">
+
+    <div class="card-principal">
+        <input type="text" id="buscador" placeholder="Buscar por nombre o semestre...">
+        <div class="botones">
+            <button onclick="mostrarTodas()">Mostrar todas</button>
+            <button onclick="limpiarBuscador()">Limpiar</button>
+            <button onclick="verCarrito()">Ver carrito</button>
+        </div>
+    </div>
+
+    <section class="grid" id="gridMaterias">
+        <!-- Render dinámico -->
+    </section>
+
+</main>
+
+<script src="js/var.js"></script>
+</body>
+</html>
